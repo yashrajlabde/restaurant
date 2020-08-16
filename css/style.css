@@ -1,0 +1,1081 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cookie&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+*{
+    
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    background-color: cornsilk;
+}
+
+
+
+ .container-fluid  {
+     padding-left: 0px;
+     padding-right: 0px;
+     
+     
+ }
+
+.navbar{
+     display: flex; 
+     justify-content: space-between;
+     margin-bottom: 0px;
+     border-radius: 0px;
+     background-color: #240c0b;
+     border: none;
+     
+}
+
+
+#navbar-brand{
+    display: flex;
+    padding: 20px 10px 10px 10px;
+    font-size: 1.8em ;
+    color: whitesmoke;
+    font-family: 'DM Serif Text', serif;
+    
+}
+
+
+#slab{
+    float: right;
+    margin-bottom: 8px;
+    list-style: none;
+   
+}
+
+.navbar-default .navbar-nav > li > a{
+    font-size: 1.1em;
+    margin-right: 30px;
+    color: white;
+    font-family: 'Rowdies', cursive;
+    
+  
+}
+
+
+
+.navbar-default .navbar-nav > li > a:hover{
+  
+    color: #bad1d4;
+    text-decoration: none;
+    }
+
+
+.navbar-default .navbar-nav > li > a:active{
+  
+    color: #9ad44e;
+    text-decoration: none;
+
+}
+.navbar-default .navbar-nav > li > a:focus{
+  
+    color: #99ffcc;
+    text-decoration: none;
+
+}
+#navitems{
+   padding: 20px 10px 10px 10px;
+   
+   
+}
+
+img{
+    margin:0px;
+}
+
+.navbar-default .navbar-toggle{
+
+    border: none;
+}
+
+
+#landing-page{
+
+    background-image: url('../img/header-panel1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    
+}
+
+.front-content{
+
+color: rgba(255, 255, 255, 0.829);
+font-size: 4vw;
+padding-top: 30vh;
+font-family: 'DM Serif Text', serif;
+-webkit-text-stroke: 1px black;
+}
+
+
+.front-say{
+    color: rgb(240, 230, 230);
+    font-size: 2vw;
+    padding-top: 70vh;
+    font-family: 'Pacifico', cursive;
+    -webkit-text-stroke: 1px black;
+    
+}
+
+.front-say > span{
+    background-color: black;
+    opacity: .9; 
+}
+
+
+#intro{
+    padding-top: 4vh;
+    background-color: cornsilk;
+    background-position: center;
+    background-size: cover ;
+    height: 40vh ;
+    display: block;
+
+}
+
+.intro-heading{
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'DM Serif Text', serif;
+}
+
+.intro-content{
+   
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-align: center;
+    font-family: 'Amiri', serif;
+    padding-top: 3vh;
+    font-size: 1.5vw;
+    
+}
+#drinks{
+   
+    background-color: cornsilk;
+    /* height: 70vh; */
+    display: block;
+}
+
+
+.drinks-heading{
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'DM Serif Text', serif;
+    padding-top: 8vh;
+
+}
+
+.drinks-content{
+    text-align: center;
+    padding-top: 6vh;
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+    font-family: 'Amiri', serif;
+    font-size: 1.5vw;
+    padding-bottom: 3vh;
+}
+.drinks-photo{
+    
+    padding:0px;
+    
+    
+    
+}
+.carousal{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    margin: 0 auto;
+
+    
+}
+
+.carousal-container{
+    background-color: cornsilk;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+.carousal-track{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+   
+}
+
+
+
+
+.carousal-slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+
+
+
+.carousal-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+
+
+.carousal-button{
+    position: absolute;
+    top: 50%;
+    z-index: 6;
+    
+   
+}
+
+
+.carousal-button-left{
+   left:5px;
+   transform: translateY(-50%);
+
+}
+
+.carousal-button-right{
+    right:5px;
+   
+}
+
+
+
+.carousal-button img{
+    width: 15px;
+}
+
+.carousal-nav{
+    /* background-color:red; */
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+
+.carousal-indicator{
+    border: 0;
+    border-radius: 50%;
+    background: rgb(0,0,0,.5);
+    height: 15px;
+    width: 15px;
+    margin: 10px;
+
+}
+.carousal-nav .current-slide{
+   
+    background:white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 1368px) and (max-device-width:5120px){
+
+    
+
+    .intro-heading{
+        text-align: center;
+        font-size: 5vw;
+        font-family: 'DM Serif Text', serif;
+    }
+    
+    .intro-content{
+       
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        font-family: 'Amiri', serif;
+        padding-top: 3vh;
+        font-size: 1.5vw;
+        
+    }
+
+    .drinks-heading{
+        text-align: center;
+        font-size: 3vw;
+        font-family: 'DM Serif Text', serif;
+        padding-top: 6vh;
+    
+    }
+    
+    .drinks-content{
+        text-align: center;
+        padding-bottom: 3vh;
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        font-family: 'Amiri', serif;
+        font-size: 2vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* SOME DOUBT RELATED TO I PAD PRO AND DESKTOP MEDIA QUERY, THEY WERE OVERLAPPING */
+@media only screen and (min-device-width: 992px) and (max-device-width: 1367px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait){
+    
+    .front-content{
+        padding-top: 10vh;
+        font-size:9vw ;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .front-say{
+        padding-top: 45vh;
+        font-size: 2.7vw;
+    }
+    .intro-heading{
+        text-align: center;
+        font-size: 7vw;
+        font-family: 'DM Serif Text', serif;
+    }
+    
+    .intro-content{
+       
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        font-family: 'Amiri', serif;
+        padding-top: 3vh;
+        font-size: 3vw;
+        
+    }
+    #drinks{
+        height: 35vh;
+    }
+    
+    .carousal{
+        height: 100%;
+    }
+
+    .drinks-heading{
+        text-align: center;
+        font-size: 4vw;
+        font-family: 'DM Serif Text', serif;
+        padding-top: 4vh;
+    
+    }
+    
+    .drinks-content{
+        text-align: center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        font-family: 'Amiri', serif;
+        font-size: 3vw;
+    }
+    
+    
+
+    
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1367px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape){
+    
+    .front-content{
+        padding-top: 10vh;
+        font-size:9vw ;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .front-say{
+        padding-top: 45vh;
+        font-size: 2.7vw;
+    }
+    .intro-heading{
+        text-align: center;
+        font-size: 7vw;
+        font-family: 'DM Serif Text', serif;
+    }
+    
+    .intro-content{
+       
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        font-family: 'Amiri', serif;
+        padding-top: 0;
+        font-size: 2vw;
+        
+    }
+    #drinks{
+        height: 35vh;
+    }
+    
+    .carousal{
+        height: 100%;
+    }
+
+    .drinks-heading{
+        text-align: center;
+        font-size: 5vw;
+        font-family: 'DM Serif Text', serif;
+        padding-top: 4vh;
+    
+    }
+    
+    .drinks-content{
+        text-align: center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        font-family: 'Amiri', serif;
+        font-size: 2vw;
+    }
+    
+    
+
+    
+}
+
+@media only screen and (max-width: 991px) and (min-width: 701px) and (orientation:landscape){
+   
+    .front-content{
+        padding-top: 20vh;
+        font-size:7vw ;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .front-say{
+        padding-top: 10vh;
+        font-size: 3vw;
+    }
+    .intro-heading{
+        text-align: center;
+        font-size: 4vw;
+        font-family: 'DM Serif Text', serif;
+    }
+    
+    .intro-content{
+       
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        font-family: 'Amiri', serif;
+        padding-top: 2vh;
+        font-size: 1.8vw ;
+        
+    }
+    .drinks-heading{
+        text-align: center;
+        font-size: 6vw;
+        font-family: 'DM Serif Text', serif;
+        padding-top: 4vh;
+    
+    }
+    
+    .drinks-content{
+        text-align: center;
+        padding-top: 2.5vh;
+        padding-bottom: 4vh;
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        font-size: 2vw;
+    }
+
+    
+    
+    
+    
+    
+}
+
+@media only screen and (max-width: 991px) and (min-width: 701px) and (orientation: portrait){
+   
+    .front-content{
+        padding-top: 20vh;
+        font-size:7vw ;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .front-say{
+        padding-top: 10vh;
+        font-size: 3vw;
+    }
+    .intro-heading{
+        text-align: center;
+        font-size: 4vw;
+        font-family: 'DM Serif Text', serif;
+    }
+    
+    .intro-content{
+       
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        font-family: 'Amiri', serif;
+        padding-top: 2vh;
+        font-size: 1.8vw ;
+        
+    }
+    .drinks-heading{
+        text-align: center;
+        font-size: 6vw;
+        font-family: 'DM Serif Text', serif;
+        padding-top: 4vh;
+    
+    }
+    
+    .drinks-content{
+        text-align: center;
+        padding-top: 2.5vh;
+        padding-bottom: 4vh;
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        font-size: 3vw;
+    }
+
+    
+    
+    
+    
+    
+}
+
+@media only screen and (max-width: 700px) and (min-width: 500px){
+   
+    .front-content{
+        padding-top: 20vh;
+        font-size:7vw ;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .front-say{
+        padding-top: 10vh;
+        font-size: 3vw;
+    }
+    .intro-heading{
+        text-align: center;
+        font-size: 4vw;
+        font-family: 'DM Serif Text', serif;
+    }
+    
+    .intro-content{
+       
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        font-family: 'Amiri', serif;
+        padding-top: 3vh;
+        font-size: 3vw ;
+        
+    }
+    .drinks-heading{
+        text-align: center;
+        font-size: 6vw;
+        font-family: 'DM Serif Text', serif;
+        padding-top: 4vh;
+    
+    }
+    
+    .drinks-content{
+        text-align: center;
+        padding-top: 2.5vh;
+        padding-bottom: 4vh;
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        font-size: 3vw;
+    }
+
+    
+}
+
+@media only screen and (max-width: 700px) and (min-width: 500px) and (orientation:landscape){
+   
+    .front-content{
+        padding-top: 20vh;
+        font-size:7vw ;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .front-say{
+        padding-top: 10vh;
+        font-size: 3vw;
+    }
+    .intro-heading{
+        text-align: center;
+        font-size: 4vw;
+        font-family: 'DM Serif Text', serif;
+        padding-top: 0;
+    }
+    
+    .intro-content{
+       
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        font-family: 'Amiri', serif;
+        padding-top: 1vh;
+        font-size: 1.7vw ;
+        
+    }
+    .drinks-heading{
+        text-align: center;
+        font-size: 4vw;
+        font-family: 'DM Serif Text', serif;
+        padding-top: 4vh;
+    
+    }
+    
+    .drinks-content{
+        text-align: center;
+        padding-top: 2.5vh;
+        padding-bottom: 4vh;
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        font-size: 2vw;
+    }
+
+    
+    
+    
+    
+    
+}
+
+@media only screen and (max-width: 991px) and (min-width: 500px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait){
+   
+    .front-content{
+        padding-top: 20vh;
+        font-size:7vw ;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .front-say{
+        padding-top: 10vh;
+        font-size: 3vw;
+    }
+    .intro-heading{
+        text-align: center;
+        font-size: 7vw;
+        font-family: 'DM Serif Text', serif;
+    }
+    
+    .intro-content{
+       
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        font-family: 'Amiri', serif;
+        padding-top: 3vh;
+        font-size: 3vw ;
+        
+    }
+    .drinks-heading{
+        text-align: center;
+        font-size: 6vw;
+        font-family: 'DM Serif Text', serif;
+        padding-top: 4vh;
+    
+    }
+    
+    .drinks-content{
+        text-align: center;
+        padding-top: 2.5vh;
+        padding-bottom: 4vh;
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        font-size: 3vw;
+    }
+
+    #drinks{
+        height: 100%;
+    }
+
+    .carousal{
+        height: 70vh;
+        width: 80%;
+       
+        
+    }
+    .carousal-image{
+        width: 100%;
+       height: 100%;
+       object-fit: cover;
+     }
+    
+    
+    
+    
+    
+    
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px){
+    
+    .front-content{
+        padding-top: 10vh;
+        font-size:10vw ;
+        -webkit-text-stroke: .8px black;
+    }
+
+    .front-say{
+        padding-top: 10vh;
+        font-size: 5vw;
+        
+    }
+    .intro-heading{
+        text-align: center;
+        font-size: 7vw;
+        font-family: 'DM Serif Text', serif;
+    }
+    
+    .intro-content{
+       
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        font-family: 'Amiri', serif;
+        padding-top: 3vh;
+        font-size: 2.6vw;
+        
+    }
+    .drinks-heading{
+        text-align: center;
+        font-size: 6vw;
+        font-family: 'DM Serif Text', serif;
+        padding-top: 4vh;
+    
+    }
+    
+    .drinks-content{
+        text-align: center;
+        padding-top: 2.5vh;
+        padding-bottom: 4vh;
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        font-size: 2.5vw;
+    }
+
+    #drinks{
+        height: 100%;
+    }
+
+    .carousal{
+        height: 70vh;
+        width: 80%
+       
+        
+    }
+    .carousal-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+
+        
+        
+    }
+    
+    
+    
+
+    
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) and (orientation: landscape){
+    
+    .front-content{
+        padding-top: 10vh;
+        font-size:10vw ;
+        -webkit-text-stroke: .8px black;
+    }
+
+    .front-say{
+        padding-top: 10vh;
+        font-size: 3vw;
+        
+    }
+    .intro-heading{
+        text-align: center;
+        font-size: 7vw;
+        font-family: 'DM Serif Text', serif;
+    }
+    
+    .intro-content{
+       
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        font-family: 'Amiri', serif;
+        padding-top: 2vh;
+        font-size: 1.5vw;
+        padding-bottom: 1vh;
+        
+    }
+    .drinks-heading{
+        text-align: center;
+        font-size: 6vw;
+        font-family: 'DM Serif Text', serif;
+        padding-top: 4vh;
+    
+    }
+    
+    .drinks-content{
+        text-align: center;
+        padding-top: 2.5vh;
+        padding-bottom: 4vh;
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        font-size: 2vw;
+    }
+
+    #drinks{
+        height: 100%;
+    }
+
+    .carousal{
+        height: 60vh;
+        width: 80%;
+       
+        
+    }
+    .carousal-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+
+        
+        
+    }
+    
+    
+    
+
+    
+}
+
+@media only screen and (max-width: 399px) and (orientation:landscape){
+    
+    .front-content{
+        padding-top: 10vh;
+        font-size:10vw ;
+        -webkit-text-stroke: .6px black;
+    }
+
+    .front-say{
+        padding-top: 10vh;
+        font-size: 5vw;
+        
+    }
+   
+    .intro-heading{
+        text-align: center;
+        font-size: 6vw;
+        font-family: 'DM Serif Text', serif;
+    }
+    
+    .intro-content{
+       
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        font-family: 'Amiri', serif;
+        padding-top: 3vh;
+        font-size: 2.3vw;
+        
+    }
+
+    .drinks-heading{
+        text-align: center;
+        font-size: 5vw;
+        font-family: 'DM Serif Text', serif;
+        padding-top: 4vh;
+    
+    }
+    
+    .drinks-content{
+        text-align: center;
+        padding-top: 2.5vh;
+        padding-bottom: 4vh;
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        font-size: 3vw;
+    }
+    
+    
+    .carousal{
+        height: 60vh;
+     
+    }
+    
+}
+
+
+@media only screen and (max-width: 399px) and (orientation:portrait){
+    
+    .front-content{
+        padding-top: 10vh;
+        font-size:10vw ;
+        -webkit-text-stroke: .6px black;
+    }
+
+    .front-say{
+        padding-top: 10vh;
+        font-size: 5vw;
+        
+    }
+   
+    .intro-heading{
+        text-align: center;
+        font-size: 7vw;
+        font-family: 'DM Serif Text', serif;
+    }
+    
+    .intro-content{
+       
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        font-family: 'Amiri', serif;
+        padding-top: 3vh;
+        font-size: 3.5vw;
+        
+    }
+
+    .drinks-heading{
+        text-align: center;
+        font-size: 6vw;
+        font-family: 'DM Serif Text', serif;
+        padding-top: 4vh;
+    
+    }
+    
+    .drinks-content{
+        text-align: center;
+        padding-top: 2.5vh;
+        padding-bottom: 4vh;
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        font-size: 3vw;
+    }
+    
+    
+    .carousal{
+        height: 60vh;
+     
+    }
+    
+}
+
+    @media only screen and (max-width: 399px) and (-webkit-min-device-pixel-ratio: 3){
+    
+        .front-content{
+            padding-top: 10vh;
+            font-size:10vw ;
+            -webkit-text-stroke: .6px black;
+        }
+    
+        .front-say{
+            padding-top: 10vh;
+            font-size: 5vw;
+            
+        }
+       
+        .intro-heading{
+            text-align: center;
+            font-size: 7vw;
+            font-family: 'DM Serif Text', serif;
+        }
+        
+        .intro-content{
+           
+            padding-left: 5vw;
+            padding-right: 5vw;
+            text-align: center;
+            font-family: 'Amiri', serif;
+            padding-top: 3vh;
+            font-size: 3.5vw;
+            
+        }
+        #drinks{
+            height: 94%;
+        }
+    
+        .drinks-heading{
+            text-align: center;
+            font-size: 6vw;
+            font-family: 'DM Serif Text', serif;
+            padding-top: 4vh;
+        
+        }
+        
+        .drinks-content{
+            text-align: center;
+            padding-top: 2.5vh;
+            padding-bottom: 4vh;
+            padding-right: 2.5vw;
+            padding-left: 2.5vw;
+           
+        }
+        
+        .carousal{
+            height: 60vh;
+            width: 85%;
+         
+        }
+        
+    
+    
+
+
+    
+}
